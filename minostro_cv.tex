@@ -1,0 +1,116 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Milton Inostroza}
+\address{1301 1st Avenue, Apt 704 \linebreak Seattle WA 98101}
+\contacts{(312) 307-9187 \linebreak minostro@minostro.com}
+
+\begin{document}
+	% Print the header
+	\makeheader
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Full Stack Software Engineer}{Groupon, Seattle}{2017 -- Present}
+			\strong{Things To Do Team} -- JavaScript; NodeJS; Ruby --
+			\begin{itemize}
+			 	\item Having a lot of fun in the Front End world.
+				\item Modified the Inventory Service to improve the throughput and latency of the fetch units endpoint.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Software Engineer}{Groupon, Chicago}{2013 -- 2016}
+			\strong{Finance Engineering Team} -- Ruby; Ruby on Rails; Clojure; MySQL; PostgreSQL; JavaScript --
+			\begin{itemize}
+				\item Led the process of adding Geo Redundancy support the services that support the Financial Infrastructure.
+				\item Built the Transaction Audit System to ensure that TxLedger and Accounting Service were in sync.
+				\item Built the VAT Invoicing Service for 13 EMEA Countries.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Software Engineer}{Groupon, Santiago}{2012 -- 2013}
+			\strong{Finance Engineering Team} -- PHP; CakePHP; MySQL; Java SE --
+			\begin{itemize}
+				\item Built the integration between the Local and the Global Accounting System (Netsuite).
+				\item Built the implementation of Tax Retention System for Argentinian and Colombian Partners.
+			\end{itemize}
+		\end{cvsubsection}		
+		\begin{cvsubsection}{Software Engineer, Contractor}{Meaculpas, Liquor Store Chain}{2006 -- 2008}
+			-- Python; Django; PostgreSQL; JavaScript --
+			\begin{itemize}
+				\item Led the development of the Points of Sales and the Management platform of the business.
+				\item Built the Back End and Front End side of the Point of Sales application from the ground up.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Software Engineer, Contractor}{Cuevas Bus Transportation}{2004 -- 2005}
+			-- Python; PyGTK+; PostgreSQL; Gazpacho/Tepache --
+			\begin{itemize}
+				\item Led the implementation of RemuneX: A Payroll System built to be compliant with the Chilean Laws.
+				\item Defined the relational data model and built the user interfaces by using Gazpacho/Tepache.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Santiago, Chile}{Universidad de Chile}{March 2010 --  April 2013}
+			\begin{itemize}
+				\item M.S.E. in Computer Science, April 2013; Thesis: Safe and Practical Decoupling of Aspects with Joint Point Interfaces. Published in ACM Transactions on Software Engineering and Methodology, 2014.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Iquique, Chile}{Universidad Arturo Prat}{March 2001 --  December 2007}
+			\begin{itemize}
+				\item B.S.E. in Computer Science, December 2005; Software Engineer, December 2007.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{Poolmachine} (2014) An Erlang OTP Application that manages pools of workers. Personal project.
+				\item \textbf{Joint Point Interfaces for AspectJ} (2011). Extended the AspectBench Compiler for AspectJ to implement Joint Point Interfaces. AspectJ is an aspect-oriented programming language for Java.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+			        \item \textbf{Erlang Interest Group:} Led bi-weekly meetings to talk/learn about Erlang. Group conformed by 10 software developers, Groupon, Chicago, 2016.
+				\item \textbf{M.S.E. funding:} Grant given by the Advanced Human Capital Program (Conicyt), Chile, 2011.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item Ruby; JavaScript; SQL; Python; Clojure; Java; PHP; AspectJ; Erlang 
+				\item Ruby on Rails; Django; MySQL; PostgreSQL; NodeJS; CakePHP
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+\end{document}
