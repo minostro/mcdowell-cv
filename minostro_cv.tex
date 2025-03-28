@@ -21,7 +21,10 @@
 %% SOFTWARE.
 
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
-\documentclass[]{mcdowellcv}
+\documentclass[includefoot]{mcdowellcv}
+
+% Override cls file to show page numbers
+\pagestyle{plain}
 
 % For mathematical symbols
 \usepackage{amsmath}
@@ -36,7 +39,21 @@
 	\makeheader
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Senior Software Engineer}{Groupon, 100\% Remote, USA}{2018 -- Present}
+		\begin{cvsubsection}{Staff Software Engineer}{Block Inc, Remote, USA}{2022 -- Present}
+			\strong{Local Team (2022 -- Present)} -- Kotlin, Misk, Aurora DB
+			\begin{itemize}
+				\item Building a market place by connecting the Square and Cash App ecosystem.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Staff Software Engineer}{Block Inc, Remote, USA}{2019 -- 2022}
+			\strong{Cash App, Investing Team (2019 -- 2022)} -- Kotlin, Misk, Aurora DB -- 
+			\begin{itemize}
+				\item Stock/Bitcoin Gifting
+				\item Escape Franklin
+				\item Teen Investing
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Senior Software Engineer}{Groupon Inc, Remote, USA}{2018 -- 2019}
 			\strong{Card Link Offers Team} -- Java8; Ruby; PostgresSQL; Redis; Sidekiq; Splunk; Blazemeter--
 			\begin{itemize}
 				\item Card Interaction Service is in charge of registering credit cards and receiving transactional data from the Credit Card Providers (VISA, MasterCard and Amex). I led the design/implementation of this service. I interacted closely with the MasterCard and Amex Product/Engineering teams to ensure the success of the project. 
@@ -44,7 +61,7 @@
 				\item Mentored Software Engineers. Two of them got promoted from Junior to Mid-Level.
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{Full Stack Software Engineer}{Groupon, Seattle}{2017}
+		\begin{cvsubsection}{Full Stack Software Engineer}{Groupon Inc, Seattle}{2017}
 			\strong{Things To Do Team} -- JavaScript; Ruby; NodeJS; MySQL --
 			\begin{itemize}
 			 	\item Led the implementation of Front End module to allow customers to buy multiple inventory in one transaction. 
@@ -52,7 +69,7 @@
 				\item Modified the Things-To-Do Inventory Service to improve the latency of an endpoint (from 600ms to 20ms) and to increase the throughput to 100K rpm.
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{Backend Software Engineer}{Groupon, Chicago}{2013 -- 2016}
+		\begin{cvsubsection}{Backend Software Engineer}{Groupon Inc, Chicago}{2013 -- 2016}
 			\strong{Global Finance Engineering Team} -- Ruby; Ruby on Rails; Clojure; MySQL; Memcached; Redis; Resque --
 			\begin{itemize}
 				\item Led the process of adding Geo Redundancy support to 10 services (Global Financial Infrastructure).
@@ -60,7 +77,7 @@
 				\item Built the VAT Invoicing Service (13 EMEA Countries), reducing the processing time from 3 days to ~12 hours.
 			\end{itemize}
 		\end{cvsubsection}
-		\begin{cvsubsection}{Backend Software Engineer}{Groupon, Santiago, Chile}{2012 -- 2013}
+		\begin{cvsubsection}{Backend Software Engineer}{Groupon Inc, Santiago, Chile}{2012 -- 2013}
 			\strong{LATAM Finance Engineering Team} -- PHP; CakePHP; MySQL; Java SE --
 			\begin{itemize}
 				\item Built the integration between the LATAM (6+ countries) platform and the Global Ledger System (Netsuite).
@@ -110,8 +127,8 @@
 	\begin{cvsection}{Languages and Technologies}
 		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Ruby; Java8; JavaScript; SQL; Python; Clojure; PHP; AspectJ; Erlang 
-				\item Ruby on Rails; Django; MySQL; PostgreSQL; Redis; Memcached; NodeJS; CakePHP; Sidekiq; Resque; Splunk; Blazemeter
+				\item Kotlin; Ruby; Java8; JavaScript; SQL; Python; Clojure; PHP; AspectJ; Erlang 
+				\item Misk; Ruby on Rails; Django; MySQL; PostgreSQL; Redis; Memcached; NodeJS; CakePHP; Sidekiq; Resque; Splunk; Blazemeter; Datadog
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
